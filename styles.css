@@ -1,0 +1,237 @@
+/* 1. Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center elements */
+header,
+section,
+footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* 2. Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active link style */
+nav a.current {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+/* 3. Home page styles */
+#home {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#home h2 {
+  font-size: 36px;
+}
+
+#home p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+/* 4. Customer support page styles */
+#customer-support {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.support-flowchart ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+td img {
+  margin: auto;
+}
+
+.support-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-diagram img {
+  width: 80%;
+  max-width: 600px;
+}
+
+/* 5. Product portfolio page styles */
+#product-portfolio {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 30%;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+/* 4x4 table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td img {
+  width: 50px;
+  height: 50px;
+}
+
+/* 6. About us page styles */
+#about-us {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#about-us p {
+  font-size: 16px;
+}
+
+/* 7. Blog/news page styles */
+#blog-news {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.blog-post h3 {
+  font-size: 24px;
+}
+
+.blog-post p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 8. Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+img {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ddd;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+ .product {
+    width: 45%;
+  }
+
+ .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul.show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
